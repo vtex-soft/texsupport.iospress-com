@@ -1,5 +1,5 @@
 % additional options: [seceqn,secthm,crcready,onecolumn]
-\documentclass{iosart2x}
+\documentclass[com]{iosart2x}
 
 %% Packages
 \usepackage{dcolumn}
@@ -27,14 +27,15 @@
 
 \author[A]{\inits{F.}\fnms{First} \snm{Author}\ead[label=e1]{editorial@iospress.nl}%
 \thanks{Corresponding author. \printead{e1}.}%
-\thanks{Do not use capitals for the author's surname.}},
+\thanks{Do not use capitals for the author's surname.}}
 \author[B]{\inits{S.}\fnms{Second} \snm{Author}\ead[label=e2]{second@somewhere.com}}
-and
-\author[B]{\inits{T.}\fnms{Third} \snm{Author}\ead[label=e3]{third@somewhere.com}}
+\author[C]{\inits{T.}\fnms{Third} \snm{Author}\ead[label=e3]{third@somewhere.com}}
 \runningauthor{F. Author et al.}
 \address[A]{Journal Production Department, \institution{IOS Press}, Nieuwe Hemweg 6b, 1013 BG, Amsterdam, \cny{The Netherlands}\printead[presep={\\}]{e1}}
 \address[B]{Department first, \institution{University or Company name},
-Abbreviate US states, \cny{Country}\printead[presep={\\}]{e2,e3}}
+Abbreviate US states, \cny{Country}\printead[presep={\\}]{e2}}
+\address[C]{Department first, \institution{University or Company name},
+Abbreviate US states, \cny{Country}\printead[presep={\\}]{e3}}
 
 \begin{abstract}
 The abstract should be clear, descriptive, self-explanatory and no longer than 200 words. It should also
@@ -77,7 +78,7 @@ The title page should provide the following information:
 \item Title (should be clear, descriptive and not too long).
 \item  Name(s) of author(s); in the case of multiple authors always indicate who is the corresponding
 author.
-\item  Full affiliation(s). Names of main institution and country should be given within respective tags: \verb|\institution{}|, \verb|\cny{}|.
+\item  Full affiliation(s). Names of main institution and country should be given within respective tags:\break \verb|\institution{}|, \verb|\cny{}|.
 \item  Complete address of corresponding author, including tel. number and e-mail address.
 \item  Abstract should be clear, descriptive, self-expla\-na\-tory and no longer than 200
 words. It should also be suitable for publication in abstracting services.
@@ -153,7 +154,7 @@ Use class option ``\texttt{crcready}'' in order to remove the page numbers from 
 
 Use sentence case for the title.
 
-Use \verb|\thanks{}| command for footnotes in\break \verb|\title|,
+Use \verb|\thanks{}| command for footnotes in \verb|\title|,
 \verb|\author| and \verb|\address| commands.
 
 Do not use capitals for author's surname. Add ``and'' before the last
